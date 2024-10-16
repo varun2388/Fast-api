@@ -21,6 +21,11 @@ You will also need an ASGI server, for production such as `uvicorn`:
 pip install "uvicorn[standard]"
 ```
 
+To install Streamlit and scikit-learn, you can use pip:
+```bash
+pip install streamlit scikit-learn
+```
+
 ## Usage
 Here's a simple example of how to use Fast-api:
 ```python
@@ -41,3 +46,9 @@ To run the example, use the following command:
 uvicorn main:app --reload
 ```
 This will start a server at `http://127.0.0.1:8000` with the interactive API documentation available at `http://127.0.0.1:8000/docs`.
+
+To run the Streamlit app, use the following command:
+```bash
+streamlit run app.py
+```
+This will start a Streamlit server at `http://localhost:8501` where you can interact with the ML model and see the predictions.
